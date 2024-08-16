@@ -1,0 +1,5 @@
+NAME                            READY   STATUS             RESTARTS   AGE
+flask-app-758f6bf65d-twwxc      1/1     Running            0          128m
+frontend-app-7644c9c6b7-5j4cg   0/1     ImagePullBackOff   0          76s
+nginx1                          1/1     Running            0          163m
+nginx2                          1/1     Running            0          164m

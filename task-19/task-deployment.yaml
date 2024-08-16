@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app-exam-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-app-exam
+  template:
+    metadata:
+      labels:
+        app: flask-app-exam
+    spec:
+      containers:
+      - image: fnabiyev/flask-app:prac-v1
+        name: flask-app-exam
+        env:
+        - name: DB_URL
+          valueFrom:
+            secretKeyRef:
+              name: exam-database
+              key: DB_URL        
+      

@@ -1,0 +1,2 @@
+kubectl create deployment flask-app --image=nvrbckdown/flask-app --dry-run=client -o yaml > task-4/flask-app.yaml
+kubectl port-forward pod/flask-app-758f6bf65d-mvwfp 8080:5000

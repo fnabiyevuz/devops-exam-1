@@ -1,0 +1,2 @@
+kubectl exec -it nginx1 bash
+curl 10.233.74.68:5000/check-ingress

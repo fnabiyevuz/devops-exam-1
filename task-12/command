@@ -1,0 +1,2 @@
+kubectl create cm task-12/task-configmap.yaml
+kubectl apply -f task-12/task-deployment.yaml

@@ -1,0 +1,2 @@
+kubectl run nginx1 --image=nginx --labels=author=fazliddin,project=practice --dry-run=client -o yaml > task-2/nginx1.yaml
+kubectl run nginx2 --image=nginx --labels=author=fazliddin,project=practice --dry-run=client -o yaml > task-2/nginx2.yaml

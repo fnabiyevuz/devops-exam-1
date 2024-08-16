@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: flask-app-exam-deployment
+spec:
+  ingressClassName: nginx
+  rules:
+  - host: fnabiyev.nvrbckdown.uz
+    http:
+      paths:
+      - backend:
+          service:
+            name: flask-app-exam-deployment
+            port:
+              number: 80
+        path: /
+        pathType: Prefix

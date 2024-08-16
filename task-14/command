@@ -1,0 +1,1 @@
+kubectl create -f task-14/flask-app-exam-deployment.yaml
